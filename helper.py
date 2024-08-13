@@ -103,21 +103,21 @@ def most_common_words(selected_user, df):
     most_common_df = pd.DataFrame(Counter(words).most_common(20))
     return most_common_df
 
+# WILL IMPLEMENT THIS PART LATER
+# def emoji_analyse(selected_user,df):
 
-def emoji_analyse(selected_user,df):
-
-    if selected_user != 'Overall':
-        df = df[df['user'] == selected_user]
+#     if selected_user != 'Overall':
+#         df = df[df['user'] == selected_user]
 
 
-    emojis = []
-    for message in df['message']:
-        emojis.extend([c for c in message if c in emoji.EMOJI_DATA])
-        # emojis.extend([char for char in message if char in emoji.UNICODE_EMOJI['en']])
+#     emojis = []
+#     for message in df['message']:
+#         emojis.extend([c for c in message if c in emoji.EMOJI_DATA])
+#         # emojis.extend([char for char in message if char in emoji.UNICODE_EMOJI['en']])
 
-    emoji_df = pd.DataFrame(Counter(emojis).most_common(len(Counter(emojis))))
-    # emoji_df = pd.DataFrame(Counter(emojis).most_common(), columns=['emojis', 'counts'])
-    return emoji_df
+#     emoji_df = pd.DataFrame(Counter(emojis).most_common(len(Counter(emojis))))
+#     # emoji_df = pd.DataFrame(Counter(emojis).most_common(), columns=['emojis', 'counts'])
+#     return emoji_df
 
 
 
