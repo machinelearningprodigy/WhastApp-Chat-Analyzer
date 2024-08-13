@@ -144,9 +144,10 @@ if upload_file is not None:
         # fig = go.Figure(data=[go.Pie(labels=emoji_df[0].head(), values=emoji_df[1].head(), textinfo='label+percent')])
         # fig.update_traces(textposition='inside', textfont_size=14)
         # st.plotly_chart(fig)
-        labels = emoji_df[0].head()  # Assuming emoji_df[0] contains emoji labels
-        values = emoji_df[1].head()  # Assuming emoji_df[1] contains the counts
 
+        
+        labels = emoji_df.iloc[:, 0].head()  # First column as labels
+        values = emoji_df.iloc[:, 1].head()  # Second column as values
         # Create a pie chart
         fig, ax = plt.subplots()
         ax.pie(values, labels=labels, autopct='%1.1f%%', startangle=90, textprops={'fontsize': 14})
