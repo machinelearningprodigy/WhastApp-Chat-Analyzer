@@ -147,6 +147,6 @@ if upload_file is not None:
 
 
 st.info("For a better view, follow these steps:")
-st.info("1. Click the three-line icon on the top right corner.")
-st.info("2. Click 'Settings'.")
-st.info("3. Select 'Wider View' for better visibility.")
+st.text("1. Click the three-line icon on the top right corner.")
+st.text("2. Click 'Settings'.")
+st.text("3. Select 'Wider View' for better visibility.")
