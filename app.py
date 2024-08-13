@@ -140,20 +140,7 @@ if upload_file is not None:
     with col1:
         st.dataframe(emoji_df)
 
-try:
     with col2:
-        if not emoji_df.empty:
-            fig = go.Figure(data=[go.Pie(labels=emoji_df['emojis'].head(), values=emoji_df['counts'].head(), textinfo='label+percent')])
-            fig.update_traces(textposition='inside', textfont_size=14)
-            st.plotly_chart(fig)
-        else:
-            st.write("No emojis found for the selected user.")
-except KeyError as e:
-    st.error(f"KeyError: {e}. Please check the column names in the DataFrame.")
-
-
-
-    # with col2:
-    #     fig = go.Figure(data=[go.Pie(labels=emoji_df['emoji'].head(), values=emoji_df['count'].head(), textinfo='label+percent')])
-    #     fig.update_traces(textposition='inside', textfont_size=14)
-    #     st.plotly_chart(fig)
+        fig = go.Figure(data=[go.Pie(labels=emoji_df['emoji'].head(), values=emoji_df['count'].head(), textinfo='label+percent')])
+        fig.update_traces(textposition='inside', textfont_size=14)
+        st.plotly_chart(fig)
