@@ -1,7 +1,7 @@
 import streamlit as st 
 import preprocessor, helper
 import matplotlib.pyplot as plt 
-import plotly.graph_objects as go
+# import plotly.graph_objects as go
 import seaborn as sns 
 
 
@@ -140,6 +140,6 @@ if upload_file is not None:
     with col1:
         st.dataframe(emoji_df)
     with col2:
-        fig = go.Figure(data=[go.Pie(labels=emoji_df[0].head(), values=emoji_df[1].head(), textinfo='label+percent')])
-        fig.update_traces(textposition='inside', textfont_size=14)
-        st.plotly_chart(fig)
+        fig,ax = plt.subplots()
+        ax.pie(emoji_df[1].head(),labels=emoji_df[0].head(),autopct="%0.2f")
+        st.pyplot(fig)
