@@ -141,6 +141,16 @@ if upload_file is not None:
         st.dataframe(emoji_df)
 
     with col2:
-        fig = go.Figure(data=[go.Pie(labels=emoji_df[0].head(), values=emoji_df[1].head(), textinfo='label+percent')])
-        fig.update_traces(textposition='inside', textfont_size=14)
-        st.plotly_chart(fig)
+        # fig = go.Figure(data=[go.Pie(labels=emoji_df[0].head(), values=emoji_df[1].head(), textinfo='label+percent')])
+        # fig.update_traces(textposition='inside', textfont_size=14)
+        # st.plotly_chart(fig)
+        labels = emoji_df[0].head()  # Assuming emoji_df[0] contains emoji labels
+        values = emoji_df[1].head()  # Assuming emoji_df[1] contains the counts
+
+        # Create a pie chart
+        fig, ax = plt.subplots()
+        ax.pie(values, labels=labels, autopct='%1.1f%%', startangle=90, textprops={'fontsize': 14})
+        ax.axis('equal')  # Ensures that pie chart is a circle
+        plt.title('Top Emojis')
+
+        st.pyplot(fig)
