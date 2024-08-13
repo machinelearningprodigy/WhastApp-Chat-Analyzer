@@ -112,9 +112,11 @@ def emoji_analyse(selected_user,df):
 
     emojis = []
     for message in df['message']:
-        emojis.extend([c for c in message if c in emoji.EMOJI_DATA])
+        # emojis.extend([c for c in message if c in emoji.EMOJI_DATA])
+        emojis.extend([char for char in message if char in emoji.UNICODE_EMOJI['en']])
 
-    emoji_df = pd.DataFrame(Counter(emojis).most_common(len(Counter(emojis))))
+    # emoji_df = pd.DataFrame(Counter(emojis).most_common(len(Counter(emojis))))
+    emoji_df = pd.DataFrame(Counter(emojis).most_common(), columns=['emojis', 'counts'])
     return emoji_df
 
 
