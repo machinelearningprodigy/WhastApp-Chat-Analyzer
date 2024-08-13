@@ -144,3 +144,9 @@ if upload_file is not None:
     #     fig = go.Figure(data=[go.Pie(labels=emoji_df[0].head(), values=emoji_df[1].head(), textinfo='label+percent')])
     #     fig.update_traces(textposition='inside', textfont_size=14)
     #     st.plotly_chart(fig)
+
+
+st.info("For a better view, follow these steps:")
+st.info("1. Click the three-line icon on the top right corner.")
+st.info("2. Click 'Settings'.")
+st.info("3. Select 'Wider View' for better visibility.")
