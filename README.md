@@ -74,22 +74,15 @@ Make sure you have the following installed:
 ## 📈 Example Outputs
 
 ### 🏆 Top Statistics
-![Top Statistics]
+
 
 ### 📅 Monthly Timeline
-![Monthly Timeline]
 
 ### 🔥 Weekly Activity Map
-![Weekly Activity Map]
+
 
 ### 🌟 Wordcloud
-![Wordcloud]
 
-## 🛠️ Future Enhancements
-
-- **Emoji Analysis**: Analyze the most frequently used emojis in the chat (Coming Soon!).
-- **Sentiment Analysis**: Determine the overall sentiment of the chat (Positive, Negative, Neutral).
-- **Interactive Filtering**: Allow users to filter data by specific time frames or users.
 
 ## 🤖 Built With
 
