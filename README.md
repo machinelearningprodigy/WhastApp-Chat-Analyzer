@@ -97,13 +97,5 @@ Make sure you have the following installed:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🎉 Acknowledgments
-
-- Special thanks to the creators of the Python libraries used in this project.
-- Inspired by the need to better understand and visualize personal WhatsApp chat data.
-
-## 📧 Contact
-
-For any inquiries, suggestions, or issues, please reach out to me at [your-email@example.com](mailto:your-email@example.com).
 
 Happy Analyzing! 🎉
