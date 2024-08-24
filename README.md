@@ -74,16 +74,16 @@ Make sure you have the following installed:
 ## 📈 Example Outputs
 
 ### 🏆 Top Statistics
-![Top Statistics](images/top_statistics.png)
+![Top Statistics]
 
 ### 📅 Monthly Timeline
-![Monthly Timeline](images/monthly_timeline.png)
+![Monthly Timeline]
 
 ### 🔥 Weekly Activity Map
-![Weekly Activity Map](images/weekly_activity_map.png)
+![Weekly Activity Map]
 
 ### 🌟 Wordcloud
-![Wordcloud](images/wordcloud.png)
+![Wordcloud]
 
 ## 🛠️ Future Enhancements
 
